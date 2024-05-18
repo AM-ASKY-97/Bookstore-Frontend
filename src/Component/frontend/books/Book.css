@@ -1,0 +1,118 @@
+.pro-img {
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.pro-img:hover {
+    transform: scale(1.05);
+}
+
+.pro-inner {
+    text-align: center;
+}
+
+.pro-title {
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.stars i {
+    font-size: 1rem;
+    color: #fdd835;
+    opacity: 1;
+    animation: pulse 1s infinite;
+}
+
+.quantity-control button {
+    padding-left: 10px;
+    padding-right: 10px; /* Adjust the font size to make the buttons bigger */
+}
+
+.dis {
+    position: relative;
+    margin-right: 0%;
+    margin-top: 0%;
+}
+
+.discount {
+    position: absolute;
+    background: linear-gradient(45deg, #b42554, #560020);
+    color: #fff;
+    padding: .5rem .75rem;
+    font-size: .75rem;
+    border-radius: 4px;
+}
+
+.pos-left {
+    left: 0%;
+}
+
+.pro-btn {
+    background-color: #d60707; /* Changed to the provided color */
+    border: none;
+    color: #fff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    padding: 0.75rem .5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pro-btn:hover {
+    background-color: #0097a7;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width:768px) {
+    .pro-img {
+        width: 180px;
+        height: 180px;
+        padding: 1rem;
+    }
+
+    .pro-title {
+        font-size: 1.25rem;
+    }
+
+    .pro-footer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .pro-img {
+        width: 130px;
+        height: 130px;
+        padding: 1rem;
+    }
+
+    .pro-title {
+        font-size: 1rem;
+    }
+
+    .pro-footer {
+        font-size: .75rem;
+    }
+}

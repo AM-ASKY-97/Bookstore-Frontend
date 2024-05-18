@@ -1,0 +1,65 @@
+.categories img {
+    height: 250px;
+}
+
+.categories .btn:hover {
+    background-color: var(--color-hover);
+}
+
+.cat-title {
+    font-size: 1.7rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--black);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pro-bt {
+    background-color: #d60707; /* Changed to the provided color */
+    border: none;
+    color: #fff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cat-title:hover {
+    opacity: 0.8; /* Added opacity on hover for category titles */
+    padding-top: 1rem; /* Adjusted padding on hover */
+    padding-bottom: 1rem; /* Adjusted padding on hover */
+}
+
+.cat-inner {
+    overflow: hidden;
+}
+
+.cat-inner img {
+    transition: all 1.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Added box shadow for images */
+}
+
+.cat-inner:hover img {
+    transform: scale(1.5) rotate(10deg); /* Combined scale and rotate for image on hover */
+    filter: grayscale(100%); /* Added grayscale effect on hover for images */
+}
+
+@media (max-width: 992px) {
+    .cat-title {
+        font-size: 1.2rem;
+    }
+
+    .pro-scrolling-wrapper {
+        overflow-x: auto;
+    }
+
+    .cat-col {
+        min-width: 250px;
+    }
+
+    .categories img {
+        height: 180px;
+    }
+}

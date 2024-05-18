@@ -1,0 +1,169 @@
+.review .slide {
+    padding: 1.5rem; /* Decreased padding */
+    border-radius: 1rem; /* Decreased border radius */
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInTranslate 1s ease-in-out forwards;
+    background: #f9f9f9;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInTranslate {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.review .slide p {
+    text-align: center;
+    padding-bottom: 1rem; /* Decreased padding */
+    font-size: 1rem; /* Decreased font size */
+    line-height: 1.5; /* Adjusted line height */
+    color: #555;
+}
+
+.review .slide .fa-quote-right {
+    position: absolute;
+    bottom: 1.5rem; /* Decreased bottom position */
+    right: 1.5rem; /* Decreased right position */
+    font-size: 4rem; /* Decreased font size */
+    color: #ff6f61;
+    opacity: 0.8;
+}
+
+.review .slide .user {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem; /* Decreased padding */
+    border-radius: 1rem; /* Decreased border radius */
+    opacity: 0;
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.review .slide .user img {
+    height: 5rem; /* Decreased height */
+    width: 5rem; /* Decreased width */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.3rem solid #fff;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+    animation: bounceIn 1s ease-in-out forwards;
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.review .slide .user h3 {
+    color: #333;
+    font-size: 1.2rem; /* Decreased font size */
+    font-weight: 700;
+    margin-left: 1rem; /* Decreased margin */
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.review .slide .user i {
+    font-size: 1rem; /* Decreased font size */
+    color: #ff6f61;
+    opacity: 0.8;
+    margin-left: 1rem; /* Decreased margin */
+}
+
+.review .slide .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 111, 97, 0.6);
+    border-radius: 1rem; /* Decreased border radius */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.review .slide:hover .overlay {
+    opacity: 1;
+}
+
+.review .slide .details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.review .slide:hover .details {
+    opacity: 1;
+}
+
+.review .slide .details h3 {
+    font-size: 1.5rem; /* Decreased font size */
+    font-weight: 700;
+    margin-bottom: 1rem; /* Decreased margin */
+}
+
+.review .slide .details p {
+    font-size: 1rem; /* Decreased font size */
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    /* Media query styles here */
+    .review .slide .user img {
+        height: 4rem; /* Decreased height */
+        width: 4rem; /* Decreased width */
+    }
+
+    .review .slide .user h3 {
+        font-size: 1rem; /* Decreased font size */
+        margin-left: 0.5rem; /* Decreased margin */
+    }
+
+    .review .slide .user i {
+        font-size: 0.9rem; /* Decreased font size */
+    }
+
+    .review .slide .fa-quote-right {
+        bottom: 1rem; /* Decreased bottom position */
+        right: 1rem; /* Decreased right position */
+        font-size: 3rem; /* Decreased font size */
+    }
+}

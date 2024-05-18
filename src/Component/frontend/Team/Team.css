@@ -1,0 +1,96 @@
+.team .slide {
+    padding: 2rem; /* Increased padding for better spacing */
+    border-radius: 1rem; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    background: #efe9e9; /* Light gray background */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft box shadow for depth */
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+.team .slide:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 12px 25px rgb(255, 111, 97); /* Increased shadow on hover */
+}
+
+.team .slide p {
+    text-align: right;
+    padding: 0.5rem; /* Adjusted padding, more padding on the left */
+    font-size: 1rem; /* Standard font size */
+    margin-right: 50px;
+    line-height: 1; /* Improved line height */
+    color: #070707; /* Dark gray text color */
+    font-family: "Britannic Bold", emoji; /* Change font style */
+}
+
+
+
+.team .slide .fa-quote-right {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: #FF6F61FF; /* Semi-transparent black color */
+    transition: right 0.3s ease, bottom 0.3s ease, font-size 0.3s ease;
+}
+
+.team .slide:hover .fa-quote-right {
+    bottom: 0.8rem; /* Adjusted position on hover */
+    right: 0.8rem; /* Adjusted position on hover */
+    font-size: 1.5rem; /* Adjusted font size on hover */
+}
+
+.team .slide .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e3a7b0, #eef2f3); /* Gradient background */
+    padding: 1.5rem;
+    border-radius: 1rem; /* Rounded corners */
+    transition: background 0.3s ease; /* Transition for background color */
+}
+
+.team .slide .user p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.team .slide:hover .user {
+    background: linear-gradient(135deg, #edf9fc, #e3a7b0); /* Reverse gradient on hover */
+}
+
+.team .slide .user img {
+    height: 6rem; /* Adjusted height */
+    width: 6rem; /* Adjusted width */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team .slide:hover .user img {
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+.team .slide .user h3 {
+    color: #333; /* Dark gray color for heading */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0; /* Removed default margin */
+    transition: color 0.3s ease; /* Transition for color change */
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.team .slide:hover .user h3 {
+    color: #007bff; /* Blue color on hover */
+}
+
+.team .slide .user i {
+    font-size: 1.2rem; /* Adjusted font size */
+    color: #007bff; /* Blue color */
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+.team .slide:hover .user i {
+    color: #28a745; /* Green color on hover */
+}

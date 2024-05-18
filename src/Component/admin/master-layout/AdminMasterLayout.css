@@ -1,0 +1,110 @@
+.main {
+    min-height: 100vh;
+}
+
+.mynav {
+    color: #fff;
+}
+
+.nav-item{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-content {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+}
+
+.brand-name {
+    font-size: 2rem;
+}
+
+.daily {
+    color: var(--color-bg);
+}
+
+.ms-3,
+.fa-bars {
+    font-size: 1rem;
+}
+
+.mynav li {
+    line-height: 2rem;
+}
+
+.view-image {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-view{
+    border-radius: 120px 20px 120px 20px;
+}
+
+.mynav li a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    border-radius: .5rem;
+    padding: 8px 5px;
+}
+
+.admin-text{
+    color: var(--primary);
+}
+
+.mynav li a:not(.active):hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mynav li a.active {
+    background: var(--primary);
+}
+
+
+.mynav li a i {
+    margin-right: 10px;
+    padding-top: 10px;
+    width: 25px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.notification-badge {
+    background-color: rgba(255, 255, 255, 0.7);
+    float: right;
+    color: #222;
+    font-size: 14px;
+    padding: 0px 8px;
+    border-radius: 2px;
+}
+
+
+@media only screen and (max-width: 990px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .flo {
+        float: right;
+    }
+
+    .table {
+        font-size: 0.8rem;
+    }
+
+    .btn-table {
+        font-size: 0.8rem;
+    }
+}

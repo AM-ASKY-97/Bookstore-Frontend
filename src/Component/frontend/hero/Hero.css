@@ -1,0 +1,93 @@
+section.hero {
+    padding: 10rem 0; /* Adjusted padding for better spacing */
+}
+
+.btn-hero {
+    padding: 12px 24px; /* Slightly reduced padding for a sleeker look */
+    border-radius: 0.5rem; /* Increased border radius for a softer appearance */
+    font-size: var(--text-medium);
+    font-weight: var(--font-weight-medium);
+}
+
+.btn-primar {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+}
+
+.btn-secondary {
+    background-color: var(--gray-2);
+    color: var(--gray-1);
+}
+
+.btn-secondary:focus {
+    background-color: var(--white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+    color: var(--gray-1);
+}
+
+.btn-secondary:hover {
+    background-color: var(--white) !important;
+    box-shadow: 0 4px 19px rgba(0, 0, 0, 0.05) !important;
+    color: var(--gray-1);
+}
+
+.text-label {
+    color: var(--primary);
+    font-size: var(--text-regular);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5; /* Adjusted line-height for better readability */
+    margin: 1.5rem 0; /* Adjusted margin for consistent spacing */
+}
+
+.text-hero-bold {
+    color: var(--white);
+    font-size: var(--header-1);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.5; /* Adjusted line-height for better readability */
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.5rem 0; /* Adjusted margin for consistent spacing */
+}
+
+.text-hero-regular {
+    color: #e8db79;
+    font-size: var(--text-regular);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5; /* Adjusted line-height for better readability */
+    font-family: 'Oswald', sans-serif;
+    margin: 1.5rem 0; /* Adjusted margin for consistent spacing */
+}
+
+@media (max-width:576px) {
+    section.hero {
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+    .btn-hero {
+        display: block;
+        margin: 1rem auto; /* Centered button */
+    }
+
+    .text-label,
+    .text-hero-bold,
+    .text-hero-regular {
+        text-align: center;
+    }
+
+    .text-hero-bold {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-3);
+        line-height: 1.5; /* Adjusted line-height for better readability */
+        margin: 1.5rem 0; /* Adjusted margin for consistent spacing */
+    }
+
+    section.hero img {
+        margin: 2rem auto; /* Centered image */
+        display: block;
+    }
+}

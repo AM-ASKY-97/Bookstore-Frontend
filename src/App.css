@@ -1,0 +1,87 @@
+:root {
+  --primary: #d60707;
+  --primary-light: #fc7373;
+  --dark-brown: #341413;
+  --gray-1: #798092;
+  --gray-2: #E6E6ED;
+  --white: #FFFFFF;
+  --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  --bg: #fbf5ea;
+  --black: #130f40;
+  --color-hover: #3bb77e;
+
+  --header-1: 62px;
+  --header-2: 48px;
+  --header-3: 42px;
+  --header-4: 32px;
+
+  --text-medium: 18px;
+  --text-regular: 16px;
+  --text-light: 13px;
+
+  --font-weight-bold: 700;
+  --font-weight-semi-bold: 600;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+body {
+  background: #eee;
+  padding-right: 0 !important;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+
+html::-webkit-scrollbar {
+  width: .4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5rem;
+}
+
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 2rem;
+  font-weight: 600;
+  color: #000000;
+  font-family: 'Nunito', sans-serif;
+}
+
+.btn{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heading span {
+  background: var(--primary);
+  color: #d8d8d8;
+  display: inline-block;
+  padding: .6rem 2rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}

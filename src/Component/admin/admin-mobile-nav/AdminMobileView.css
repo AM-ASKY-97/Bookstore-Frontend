@@ -1,0 +1,16 @@
+.user{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dropdown-item{
+    line-height: 2rem;
+}
+
+.dropdown-item:hover{
+    background: rgba(255, 255, 255, 0.2);;
+}
+
+.drop{
+    margin-left: .5rem;
+}

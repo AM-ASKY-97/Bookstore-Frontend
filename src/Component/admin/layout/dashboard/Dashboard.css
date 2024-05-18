@@ -1,0 +1,217 @@
+.box {
+    background-color: #272c4a;
+    padding: 10px;
+}
+
+.box:hover {
+    background-color: #364161;
+}
+
+.box p {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.tab {
+    background: linear-gradient(to right, #272c4a, #364161) !important;
+}
+
+.box p span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #818181;
+    padding-top: 10px;
+}
+
+.box-icon {
+    font-size: 40px !important;
+    float: right;
+    margin-top: 35px !important;
+    color: #818181;
+    padding-right: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bg {
+    background-color: #272c4a;
+}
+
+.content-box {
+    padding: 20px;
+    background-color: #272c4a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box p {
+    margin: 0px;
+    font-size: 20px;
+    color: var(--color-bg);
+}
+
+.content-box p span {
+    float: right;
+    background-color: #ddd;
+    padding: 3px 10px;
+    font-size: 15px;
+}
+
+.circle-wrap {
+    margin: 50px auto;
+    width: 150px;
+    height: 150px;
+    background: #e6e2e7;
+    border-radius: 50%;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .circle .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: var(--color-bg);
+}
+
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(126deg);
+}
+
+@keyframes fill {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(126deg);
+    }
+}
+
+.circle-wrap .inside-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 130px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+/* Sparkling Animation for Box */
+@keyframes sparkle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+.box:hover {
+    animation: sparkle 0.5s infinite alternate;
+}
+
+/* Neon Glow for Tab */
+.tab {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Floating Animation for Content Box */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.content-box {
+    animation: float 3s infinite ease-in-out;
+}
+
+/* Rainbow Animation for Inside Circle */
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.circle-wrap .inside-circle {
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 1400% 1400%;
+    animation: rainbow 5s infinite;
+    color: transparent;
+    background-clip: text;
+}
+
+/* Rotate Animation for Circle Wrap on Hover */
+.circle-wrap:hover {
+    animation: rotate 1s ease-in-out;
+}
+
+
+
+

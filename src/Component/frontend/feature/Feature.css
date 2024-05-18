@@ -1,0 +1,64 @@
+.feature img {
+    height: 230px;
+}
+
+.feature .btn {
+    background-color: var(--primary);
+    border: none;
+}
+
+.feature .btn:hover {
+    background-color: var(--color-hover);
+}
+
+.title {
+    font-size: 1.7rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.para {
+    color: var(--gray-1);
+    font-size: var(--text-regular);
+    font-weight: var(--font-weight-medium);
+    line-height: 31px;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}
+
+@media (max-width:768px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .para {
+        font-size: .8rem;
+    }
+
+    .scrolling-wrapper {
+        overflow-x: auto;
+    }
+
+    .col-4 {
+        min-width: 250px;
+    }
+
+    .feature img {
+        height: 180px;
+    }
+
+}
