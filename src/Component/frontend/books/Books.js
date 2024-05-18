@@ -137,7 +137,7 @@ const Product = () => {
                                         </button>
                                     </div>
                                     <div className="card-footer text-center pro-footer">
-                                        <small className="text-body-secondary">Last updated {calculateTimeDifference(product.updated_at)}</small>
+                                        <small className="text-body-secondary">Last updated 3 min</small>
                                     </div>
                                 </div>
                             </div>
