@@ -128,7 +128,7 @@ const Product = () => {
                                             <i className="fas fa-star"></i>
                                             <i className="fas fa-star"></i>
                                         </div>
-                                        <div className="card-text my-3">LKR {product.newPrice} / 1Kg</div>
+                                        <div className="card-text my-3">LKR {product.newPrice}</div>
                                         <button
                                             className={`btn pro-btn ${isProductInCart(product.id) ? 'btn-primary' : ''}`}
                                             onClick={() => addToCart(product)}
