@@ -15,14 +15,21 @@ const Product = () => {
 
     useEffect(() => {
         fetchBooks();
-        const interval = setInterval(fetchBooks, 10000); // Adjusted interval to 10 seconds for better performance
+        storedCartItems();
+    
+        const interval = setInterval(() => {
+            fetchBooks();
+            storedCartItems();
+        }, 1000);
+    
         return () => clearInterval(interval);
     }, []);
+    
 
-    useEffect(() => {
+    const storedCartItems= () =>{
         const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
         setCartItems(storedCartItems);
-    }, []);
+    }
 
     useEffect(() => {
         setFilteredProducts(
@@ -102,6 +109,19 @@ const Product = () => {
     return (
         <section className='container' id='Gallery'>
             <h1 className="heading" data-aos-duration="2000" data-aos="zoom-in-down">Book <span>Gallery</span></h1>
+
+            <div className='row mb-3'>
+                <div className='col-md-6'>
+                    <form className="d-flex">
+                        <input type="search"
+                            placeholder="Search..."
+                            className="form-control me-2"
+                            value={searchQuery}
+                            onChange={handleSearchInputChange}
+                        />
+                    </form>
+                </div>
+            </div>
 
             <div className='row g-1 g-lg-3' style={{ padding: '5px' }}>
                 {
