@@ -154,7 +154,7 @@ const Navbar = () => {
                             {itemCount >= 0 && <span>{itemCount}</span>}
                         </span>
                     </button>
-                    
+
                     <button className="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" onClick={() => setOffcanvasOpen(!offcanvasOpen)}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -175,28 +175,28 @@ const Navbar = () => {
                                     <table className="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th scope="col">Title</th>
-                                                <th scope="col">Price</th>
-                                                <th scope="col">Quantity</th>
-                                                <th scope="col">Total</th>
-                                                <th scope="col">Actions</th>
+                                                <th scope="col" className="text-nowrap text-truncate">Title</th>
+                                                <th scope="col" className="text-nowrap text-truncate">Price</th>
+                                                <th scope="col" className="text-nowrap text-truncate">Quantity</th>
+                                                <th scope="col" className="text-nowrap text-truncate">Total</th>
+                                                <th scope="col" className="text-nowrap text-truncate">Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             {cartItems.map((item) => (
                                                 <tr key={item.id}>
-                                                    <td>{item.tittle}</td>
-                                                    <td>LKR {item.newPrice}</td>
+                                                    <td className="text-nowrap text-truncate">{item.tittle}</td>
+                                                    <td className="text-nowrap text-truncate">LKR {item.newPrice}</td>
                                                     <td>
                                                         <div className="d-flex align-items-center">
-                                                            <button className="btn btn-secondary btn-sm me-2" onClick={() => decreaseQuantity(item.id)}>-</button>
-                                                            {item.productQY}
-                                                            <button className="btn btn-secondary btn-sm ms-2" onClick={() => increaseQuantity(item.id)}>+</button>
+                                                            <button className="btn btn-secondary btn-sm me-2 p-1" onClick={() => decreaseQuantity(item.id)}>-</button>
+                                                            <span className="d-md-inline">{item.productQY}</span>
+                                                            <button className="btn btn-secondary btn-sm ms-2 p-1" onClick={() => increaseQuantity(item.id)}>+</button>
                                                         </div>
                                                     </td>
-                                                    <td>LKR {item.newPrice * item.productQY}</td>
+                                                    <td className="text-nowrap text-truncate">LKR {item.newPrice * item.productQY}</td>
                                                     <td>
-                                                        <button className="btn btn-danger" onClick={() => removeFromCart(item.id)}>Remove</button>
+                                                        <button className="btn btn-danger btn-sm p-1" onClick={() => removeFromCart(item.id)}>Remove</button>
                                                     </td>
                                                 </tr>
                                             ))}

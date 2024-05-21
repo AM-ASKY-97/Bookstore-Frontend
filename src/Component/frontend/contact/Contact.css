@@ -53,6 +53,16 @@
     transition: 0.3s;
 }
 
+.contact-btn{
+    background-color: #d60707; /* Changed to the provided color */
+    border: none;
+    color: #fff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    padding: 0.75rem .5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .contact .row form .inputBox input:focus + label,
 .contact .row form .inputBox textarea:focus + label,
 .contact .row form .inputBox input:valid + label,

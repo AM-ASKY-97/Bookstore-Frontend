@@ -77,7 +77,7 @@ const Contact = () => {
                         </div>
 
                         <textarea placeholder="Message" name="message" cols="30" rows="10"></textarea>
-                        <a href='#' className="btn btn-primary contact-btn">Order Now</a>
+                        <a href='#' className="btn contact-btn">Order Now</a>
 
                         {showSuccessMessage && <p className="success-message">Message sent Successfully!</p>}
                         {showErrorMessage && <p className="error-message">Please fill in all fields before submitting.</p>}

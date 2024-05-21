@@ -1,5 +1,5 @@
 .navbar {
-   
+
     height: 90px;
     cursor: pointer;
 }
@@ -21,6 +21,22 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 576px) {
+
+    .table th,
+    .table td {
+        font-size: 0.8rem;
+        /* Adjust font size for mobile */
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        /* Adjust button font size for mobile */
+        padding: 0.25rem 0.5rem;
+        /* Adjust button padding for mobile */
+    }
+}
+
 
 .login-button:hover {
     background-color: #00b383;
@@ -29,10 +45,10 @@
 .navbar-toggler {
     border: none;
     font-size: 1.5rem;
-    
+
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     color: #fff;
 }
 

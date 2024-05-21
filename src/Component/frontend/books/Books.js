@@ -16,17 +16,17 @@ const Product = () => {
     useEffect(() => {
         fetchBooks();
         storedCartItems();
-    
+
         const interval = setInterval(() => {
             fetchBooks();
             storedCartItems();
         }, 1000);
-    
+
         return () => clearInterval(interval);
     }, []);
-    
 
-    const storedCartItems= () =>{
+
+    const storedCartItems = () => {
         const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
         setCartItems(storedCartItems);
     }
@@ -122,6 +122,7 @@ const Product = () => {
                     </form>
                 </div>
             </div>
+
 
             <div className='row g-1 g-lg-3' style={{ padding: '5px' }}>
                 {
