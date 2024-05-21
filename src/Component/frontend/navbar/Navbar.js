@@ -156,7 +156,7 @@ const Navbar = () => {
                     </button>
 
                     <button className="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" onClick={() => setOffcanvasOpen(!offcanvasOpen)}>
-                        <span className="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"> </span>
                     </button>
                 </div>
             </nav>
