@@ -99,6 +99,14 @@
     .pro-footer {
         font-size: 1rem;
     }
+
+    .pro-btn {
+       font-size: .6rem;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        padding: 0.5rem .5rem;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 450px) {

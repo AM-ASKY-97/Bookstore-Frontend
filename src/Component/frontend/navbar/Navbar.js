@@ -148,15 +148,15 @@ const Navbar = () => {
                             </ul>
                         </div>
                     </div>
-                    <button className="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" onClick={() => setOffcanvasOpen(!offcanvasOpen)}>
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-
                     <button type="button" className="btn position-relative" onClick={handleCartButtonClick}>
                         <FaShoppingCart className="fs-4 text-light" />
                         <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             {itemCount >= 0 && <span>{itemCount}</span>}
                         </span>
+                    </button>
+                    
+                    <button className="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" onClick={() => setOffcanvasOpen(!offcanvasOpen)}>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
                 </div>
             </nav>
